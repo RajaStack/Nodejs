@@ -3,7 +3,7 @@
 Step1 : Download the Project
 #        npm install
 
-#        ng serve
+#        node server.js
 
-Server will run on http://localhost:3000/
+Server will run on http://localhost:4000/ ( MongoDB will be running on 27017 localhost )
 
