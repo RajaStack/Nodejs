@@ -37,7 +37,11 @@ app.get("/products", (req, res) => {
 
 app.post("/cart", (req, res) => {
     let id = req.body.id;
-    Product.findOneAndUpdate({"_id" : id}, {"cart" : 1}, {new : true}, (err, result)=>{
+    let type = req.body.type;
+    let query = {"cart" : 1}
+    if(type == 2)
+      query.cart = 0;
+    Product.findOneAndUpdate({"_id" : id}, query, {new : true}, (err, result)=>{
         if(err)
         {
             StatusModel.status = false;
@@ -55,6 +59,7 @@ app.post("/cart", (req, res) => {
         }        
     }); 
 });
+
 
 
  
