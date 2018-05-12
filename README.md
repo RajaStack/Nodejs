@@ -9,19 +9,21 @@ Server will run on http://localhost:4000/ ( MongoDB will be running on 27017 loc
 
 Sample Product Collection
 
+```javascript
 {
-    "_id" : ObjectId("5adec4f71bcf485d6c8c1867"),
-    "title" : "Ambuja PPC",
-    "image" : "",
-    "price" : 1001,
+    "_id" : ObjectId("5adec4f71bcf485d6c8c1866"),
+    "title" : "LED TV",
+    "image" : "https://images-na.ssl-images-amazon.com/images/I/81abDGNBMWL._SX425_.jpg",
+    "price" : 1200,
     "cart" : 1,
     "created_at" : ISODate("2018-04-23T06:15:32.107Z")
 },
 {
-    "_id" : ObjectId("5adec4f71bcf485d6c8c1868"),
-    "title" : "Ambuja White",
-    "image" : "",
-    "price" : 1001,
+    "_id" : ObjectId("5adec4f71bcf485d6c8c1866"),
+    "title" : "LCD TV",
+    "image" : "https://images-na.ssl-images-amazon.com/images/I/81abDGNBMWL._SX425_.jpg",
+    "price" : 1500,
     "cart" : 0,
     "created_at" : ISODate("2018-04-23T06:15:32.107Z")
 }
+```
